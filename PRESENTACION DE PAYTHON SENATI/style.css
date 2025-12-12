@@ -1,0 +1,192 @@
+/* ======================== */
+/*      ESTILO NORMAL       */
+/* ======================== */
+
+body {
+    background: #f5f5f5;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+.header-senati {
+    background: #003e9b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo-senati {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.cursos {
+    padding: 20px;
+    text-align: center;
+}
+
+.curso-box {
+    background: white;
+    display: inline-block;
+    padding: 15px 20px;
+    margin: 10px;
+    border-radius: 8px;
+    font-size: 18px;
+    border: 2px solid #003e9b;
+}
+
+.click-msg {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+}
+
+/* ======================== */
+/*     GLITCH EFECTOS       */
+/* ======================== */
+
+.glitch {
+    animation: glitchAnim 0.25s infinite;
+}
+
+@keyframes glitchAnim {
+    0% { transform: skew(2deg); filter: hue-rotate(20deg); }
+    50% { transform: skew(-3deg); filter: hue-rotate(-30deg); }
+    100% { transform: skew(1deg); }
+}
+
+.glitch-strong {
+    animation: glitchBoom 0.15s infinite;
+}
+
+@keyframes glitchBoom {
+    0% { transform: translate(5px, -5px) skew(10deg); filter: contrast(200%) brightness(2); }
+    50% { transform: translate(-5px, 3px) skew(-10deg); }
+    100% { transform: translate(0, 0); }
+}
+
+/* ======================== */
+/*         CMD WINDOWS      */
+/* ======================== */
+
+.cmd-small,
+.cmd-medium,
+.cmd-large {
+    background: black;
+    color: #00ff00;
+    font-family: "Consolas", monospace;
+    padding: 12px;
+    position: fixed;
+    border: 2px solid #00ff00;
+    animation: popIn 0.2s ease-out;
+    z-index: 999;
+}
+
+.cmd-small {
+    width: 220px;
+    height: 130px;
+    font-size: 12px;
+}
+
+.cmd-medium {
+    width: 340px;
+    height: 220px;
+    font-size: 13px;
+}
+
+.cmd-large {
+    width: 500px;
+    height: 350px;
+    font-size: 14px;
+}
+
+@keyframes popIn {
+    0% { transform: scale(0.4); }
+    100% { transform: scale(1); }
+}
+
+/* ======================== */
+/*    MEGA EXTRACCIÓN       */
+/* ======================== */
+
+.mega-extract {
+    position: fixed;
+    top: 10%;
+    left: 25%;
+    width: 50%;
+    background: #000;
+    color: #0f0;
+    padding: 20px;
+    border: 2px solid red;
+    font-family: Consolas;
+    z-index: 1000;
+}
+
+.bar {
+    width: 100%;
+    height: 25px;
+    border: 2px solid #0f0;
+    margin-bottom: 10px;
+}
+
+#mega-bar {
+    background: #0f0;
+    width: 0%;
+    height: 100%;
+    transition: width 0.1s linear;
+}
+
+#mega-log {
+    height: 150px;
+    overflow-y: auto;
+    background: #050505;
+    padding: 5px;
+    font-size: 14px;
+}
+
+/* ======================== */
+/*   HACKER ANIMADO         */
+/* ======================== */
+
+.hacker-face img {
+    position: fixed;
+    width: 300px;
+    height: auto;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 10px;
+    animation: shake 0.3s infinite;
+    z-index: 2000;
+}
+
+@keyframes shake {
+    0% { transform: translate(2px, 2px); }
+    50% { transform: translate(-2px, -3px); }
+    100% { transform: translate(0px, 1px); }
+}
+
+/* ======================== */
+/*  FINAL DEL ATAQUE        */
+/* ======================== */
+
+.final-screen {
+    background: black;
+    color: #00ffea;
+    font-size: 50px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Consolas;
+    text-shadow: 0 0 10px #00faff;
+    animation: fadeIn 1.2s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
