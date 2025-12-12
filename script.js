@@ -28,7 +28,7 @@ document.addEventListener("keydown", (e) => {
     SONIDOS
 ============================================================ */
 function playSound(name) {
-    let audio = new Audio("audio/" + name);
+    let audio = new Audio("./audio/" + name);
     audio.volume = 1;
     audio.play();
 }
@@ -243,6 +243,7 @@ function randText() {
 function randHex() {
     return Math.random().toString(16).substring(2, 10);
 }
+
 
 
 
